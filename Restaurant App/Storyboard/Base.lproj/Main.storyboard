@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurant List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RestaurantListViewController" customModule="Restaurant_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ml-4d-gt9">
+                                <rect key="frame" x="0.0" y="42" width="414" height="83"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_logo" translatesAutoresizingMaskIntoConstraints="NO" id="c0M-mo-rKN">
+                                        <rect key="frame" x="10" y="15" width="60" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8ZX-NN-zG9"/>
+                                            <constraint firstAttribute="width" constant="60" id="jcw-3q-bhd"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="p9c-6Q-bZY"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="y9W-6C-PUP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IP-EZ-NhG">
+                                        <rect key="frame" x="349" y="17.5" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="EBP-Qo-2CY"/>
+                                            <constraint firstAttribute="width" constant="45" id="LRf-ag-yB4"/>
+                                            <constraint firstAttribute="height" constant="45" id="eo2-gB-oUM"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="soH-L0-bcy"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="research_logo">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RestaurantApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFO-4q-ZMn">
+                                        <rect key="frame" x="73" y="17.5" width="200" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Q7r-dG-Ex9"/>
+                                            <constraint firstAttribute="width" constant="200" id="btQ-4G-jTK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" red="0.51894262620663711" green="0.69406261640725675" blue="0.39782996793358005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iFO-4q-ZMn" firstAttribute="centerY" secondItem="4Ml-4d-gt9" secondAttribute="centerY" id="2j9-6l-ahF"/>
+                                    <constraint firstItem="7IP-EZ-NhG" firstAttribute="centerY" secondItem="4Ml-4d-gt9" secondAttribute="centerY" id="3He-JR-Oe0"/>
+                                    <constraint firstItem="7IP-EZ-NhG" firstAttribute="centerY" secondItem="4Ml-4d-gt9" secondAttribute="centerY" id="Cwl-ca-VOy"/>
+                                    <constraint firstItem="iFO-4q-ZMn" firstAttribute="leading" secondItem="c0M-mo-rKN" secondAttribute="trailing" constant="3" id="MHS-hI-CXx"/>
+                                    <constraint firstAttribute="trailing" secondItem="7IP-EZ-NhG" secondAttribute="trailing" constant="35" id="Sfc-Yx-BZl"/>
+                                    <constraint firstItem="c0M-mo-rKN" firstAttribute="centerY" secondItem="4Ml-4d-gt9" secondAttribute="centerY" id="SrM-GX-2hQ"/>
+                                    <constraint firstItem="c0M-mo-rKN" firstAttribute="leading" secondItem="4Ml-4d-gt9" secondAttribute="leading" constant="10" id="Z7M-zQ-gZY"/>
+                                    <constraint firstItem="c0M-mo-rKN" firstAttribute="centerY" secondItem="4Ml-4d-gt9" secondAttribute="centerY" id="dMb-2U-bFJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="7IP-EZ-NhG" secondAttribute="trailing" constant="20" id="m9c-S0-3Wc"/>
+                                    <constraint firstAttribute="height" constant="80" id="s8o-IO-ZlB"/>
+                                    <constraint firstItem="c0M-mo-rKN" firstAttribute="leading" secondItem="4Ml-4d-gt9" secondAttribute="leading" constant="10" id="wMx-yd-M2q"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IR3-ZS-eXV">
+                                <rect key="frame" x="0.0" y="127" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LDE-tt-yx9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2iT-cX-kNr">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6HU-Rd-fVq">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Ml-4d-gt9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AnJ-4u-CaB"/>
+                            <constraint firstItem="4Ml-4d-gt9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GwL-Eh-lx6"/>
+                            <constraint firstItem="4Ml-4d-gt9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sga-xq-Glu"/>
+                            <constraint firstItem="4Ml-4d-gt9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WY2-e7-F1P"/>
+                            <constraint firstItem="IR3-ZS-eXV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XIA-yA-B8X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IR3-ZS-eXV" secondAttribute="bottom" id="Yym-nC-kfc"/>
+                            <constraint firstItem="IR3-ZS-eXV" firstAttribute="top" secondItem="4Ml-4d-gt9" secondAttribute="bottom" id="bIx-M2-vbi"/>
+                            <constraint firstItem="4Ml-4d-gt9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g6H-Rt-0aT"/>
+                            <constraint firstItem="4Ml-4d-gt9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l47-fl-gUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IR3-ZS-eXV" secondAttribute="trailing" id="pMH-Un-q05"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerHeightConstraint" destination="s8o-IO-ZlB" id="VeL-m7-256"/>
+                        <outlet property="headerTopConstraint" destination="AnJ-4u-CaB" id="VFP-Tc-3fg"/>
+                        <outlet property="headerView" destination="4Ml-4d-gt9" id="F9z-N4-Cn4"/>
+                        <outlet property="restaurantListCollectionView" destination="IR3-ZS-eXV" id="LxN-pH-TGv"/>
+                        <outlet property="searchButton" destination="7IP-EZ-NhG" id="boB-p4-p8I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="research_logo" width="64" height="64"/>
+        <image name="restaurant_logo" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

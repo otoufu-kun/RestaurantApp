@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uNo-DX-kwV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurant View Controller-->
+        <scene sceneID="nOC-b4-d1P">
+            <objects>
+                <viewController storyboardIdentifier="RestaurantViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uNo-DX-kwV" customClass="RestaurantViewController" customModule="Restaurant_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rrd-MS-HTg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hp8-4p-qr6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="Tna-lx-mfY"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kiz-Og-W82">
+                                <rect key="frame" x="0.0" y="324" width="414" height="538"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9ul-2z-tsa">
+                                        <rect key="frame" x="10" y="10" width="394" height="350"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店の名前" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmj-9m-1bx">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="08E-7d-Uet"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店の詳細" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIh-Fs-wJw">
+                                                <rect key="frame" x="0.0" y="75" width="394" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="p4d-lE-y9p"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2E-rK-lLm">
+                                                <rect key="frame" x="0.0" y="130" width="394" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="xKY-4M-2rY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="営業時間" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2x-5w-QAI">
+                                                <rect key="frame" x="0.0" y="205" width="394" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="okk-OR-muX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支払い額平均" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCn-vB-Hok">
+                                                <rect key="frame" x="0.0" y="280" width="394" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="K3O-wx-mGg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9ul-2z-tsa" secondAttribute="trailing" constant="10" id="1b8-8i-6wD"/>
+                                    <constraint firstItem="9ul-2z-tsa" firstAttribute="top" secondItem="Kiz-Og-W82" secondAttribute="top" constant="10" id="Saa-ul-9Ft"/>
+                                    <constraint firstItem="9ul-2z-tsa" firstAttribute="leading" secondItem="Kiz-Og-W82" secondAttribute="leading" constant="10" id="j2k-Qo-PYs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Td-vS-PKa"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="leading" secondItem="7Td-vS-PKa" secondAttribute="leading" id="Amt-OD-ZMX"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="leading" secondItem="7Td-vS-PKa" secondAttribute="leading" id="Ed3-W7-qJo"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="trailing" secondItem="7Td-vS-PKa" secondAttribute="trailing" id="FoQ-FR-5bC"/>
+                            <constraint firstItem="Hp8-4p-qr6" firstAttribute="top" secondItem="7Td-vS-PKa" secondAttribute="top" id="HH3-sB-kMM"/>
+                            <constraint firstItem="Hp8-4p-qr6" firstAttribute="leading" secondItem="7Td-vS-PKa" secondAttribute="leading" id="Kbx-X3-mfy"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="leading" secondItem="7Td-vS-PKa" secondAttribute="leading" id="SwB-f0-rub"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="trailing" secondItem="7Td-vS-PKa" secondAttribute="trailing" id="WyC-1e-sDi"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="top" secondItem="Hp8-4p-qr6" secondAttribute="bottom" id="cVs-Lt-61U"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="top" secondItem="Hp8-4p-qr6" secondAttribute="bottom" id="fey-Gx-Pai"/>
+                            <constraint firstItem="7Td-vS-PKa" firstAttribute="trailing" secondItem="Hp8-4p-qr6" secondAttribute="trailing" id="hGX-zM-PfK"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="leading" secondItem="7Td-vS-PKa" secondAttribute="leading" id="hZB-93-rJM"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="trailing" secondItem="7Td-vS-PKa" secondAttribute="trailing" id="iWH-of-SOJ"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="top" secondItem="Hp8-4p-qr6" secondAttribute="bottom" id="jUM-Le-YgT"/>
+                            <constraint firstItem="7Td-vS-PKa" firstAttribute="bottom" secondItem="Kiz-Og-W82" secondAttribute="bottom" id="qTv-YE-dnN"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="trailing" secondItem="7Td-vS-PKa" secondAttribute="trailing" id="tqG-ff-0Xg"/>
+                            <constraint firstItem="Kiz-Og-W82" firstAttribute="top" secondItem="Hp8-4p-qr6" secondAttribute="bottom" id="vTw-ma-SzP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="shopAddressLabel" destination="k2E-rK-lLm" id="aRD-sZ-lx6"/>
+                        <outlet property="shopBugetAverageLabel" destination="TCn-vB-Hok" id="pzO-cY-jK6"/>
+                        <outlet property="shopDescriptionLabel" destination="nIh-Fs-wJw" id="vhW-Kk-dcc"/>
+                        <outlet property="shopImageView" destination="Hp8-4p-qr6" id="jP0-mn-1A9"/>
+                        <outlet property="shopNameLabel" destination="fmj-9m-1bx" id="g63-qT-uwD"/>
+                        <outlet property="shopTimeLabel" destination="X2x-5w-QAI" id="Fd3-dO-48R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ut-bA-fzP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268.1159420289855" y="219.64285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
